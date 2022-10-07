@@ -1,0 +1,159 @@
+{
+  "settings": {
+    "name": "walletatomic",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/atomic-wallet.png",
+    "mbrsiteDomain": "8makd2h9ia",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Atomic Wallet - Buy, Stake and Exchange in One Crypto Wallet.",
+        "meta_descr": "The Atomic Wallet is a well known decentralized cryptocurrency wallet and exchange app. It supports about 500 coins and tokens. Decentralized exchange, known as Atomic Swap, may be …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/atomicwallet-io.png\" alt=\"Atomic Wallet\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image3-0",
+          "_isUserblock": true,
+          "_cid": "tjzwuacl7N",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Atomic Wallet - Buy, Stake and Exchange in One Crypto Wallet</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Atomic Wallet - Buy, Stake and Exchange\n<br>The Atomic Wallet is a well known decentralized cryptocurrency wallet and exchange app. It supports about 500 coins and tokens. Decentralized exchange, known as Atomic Swap, may be the amazing feature that produces Atomic unique from others. The wallet was founded in 2017 by Konstantin Gladych, who’s the co-founder and CEO of Changelly. This crypto wallet supports several os’s including Windows, MacOS, Android, and iOS. You may even use your bank card to get cryptocurrencies such as for example Bitcoin, Litecoin, and Ethereum without any centralized exchange. Here, in this informative article, we have mentioned everything in regards to the Atomic that you must know before using it.\n<br>\n<br>WHAT IS AN ATOMIC WALLET?\n<br>The Atomic wallet is one of many popular wallets in the crypto community. The Atomic is wonderful for beginners because of its amazing user interface. It allows you to directly buy the crypto even when they do not already own crypto assets. This causes it to be different from cryptocurrency wallets such as for example Metamask. In such wallets, you’ve to buy crypto assets by way of a third-party exchange and send them to the wallet for exchanging them. Combined with easy start-up, the wallet also allows you to exchange almost any coin and token. This mainly occurs due to the integration of the wallet with the Atomic Swap exchange platform. The platform has some other exchange integrations for added coverage.\n<br>\n<br>PROS &amp; CONS OF ATOMIC WALLET\n<br>Prior to going with the Atomic download and install process, it is important to learn the professionals and cons of the wallet. So, let’s check them in this section:\n<br>\n<br>Pros\n<br>The wallet encrypts Private keys and stores them on your device.\n<br>You can use the Atomic crypto wallet with nearly every device including Windows, Mac, Android, Linux, and iOS.\n<br>Ability to get cryptocurrency in a wallet.\n<br>Easy to use because of its simple yet unique UI.\n<br>Cons\n<br>No hardware wallet support.\n<br>Support is mediocre.\n<br>Only certain cryptocurrencies are there for sale\n<br>WHY ATOMIC WALLET FOR YOUR CRYPTOCURRENCY?\n<br>Some important facts that make Atomic best for managing your cryptocurrencies are:\n<br>\n<br>Security: The wallet encrypts your private keys and never leaves your device. It allows you to easily control your funds.\n<br>Anonymous: There’s no need for any kind of account verification, no KYC is needed to access basic features in the wallet. It prevents your account from being blocked by anyone.\n<br>24/7 live support: The professional experts are always available to help you. You can easily get an instant and efficient response via live chat or email. \n<br>HOW TO DOWNLOAD ATOMIC WALLET?\n<br>It’s quite simple for users to download and install Atomic on their device. The wallet is available for virtually all devices, including Windows, MacOS, Android, Ubuntu, and much more. The method to download the wallet really is easy and quick, and includes the next steps:\n<br>\n<br>Open Atomic’s official website, i.e., https://atomicwall.github.io/\n<br>Now, locate and click the “Download” button.\n<br>This can navigate one to the “Download Atomic wallet” section.\n<br>Here, you will need to select the device on which you have to download the wallet.\n<br>You can choose any among Windows, MacOS, Ubuntu, Fedora, and Debian. If you like Atomic. Then download and install on your Cell phone, select among Google Play, Android, and Play Store. \n<br>Go through on-screen instructions to perform the downloading process.\n<br>After the wallet is downloaded, open the file and follow the instructions that appear on the screen to install it.\n<br>\n<br>IS ATOMIC WALLET SAFE?\n<br>Atomic Wallet has a screen that provides you usage of your funds on the blockchain. It uses private keys and backup phrases to store your cryptocurrencies locally on your device. The wallet strongly encrypts your cryptos and allows you to perform all the operations within it employing a password. Atomic never stores any of your private data and this makes you and only you the exclusive owner of your keys and funds. In regards to the safety of the wallet. It’s the safest wallet if you follow some basic safety rules. These rules include: \n<br>\n<br>Keep your device safe and prevent it from unauthorized access. If your device is anyhow compromised, the wallet will get compromised too. \n<br>It can be advised not to generally share your 12-word backup or private keys with anyone. The backup is like a key to your wallet, whoever owns it, can access the funds. \n<br>Note your passwords safely and note them somewhere for future use. Create a unique and strong password for Atomic Wallet and store it in a dependable password manager.\n<br>BEST FEATURES OF ATOMIC WALLET\n<br>Some best top features of Atomic include its cost, coin, and token support. Along with these, the security and the capacity to purchase cryptocurrency directly together with your bank card make the wallet more amazing. You don’t need to pay for any fees to use this wallet besides network transaction fees. Let’s check some top features of Atomic wallet from below:\n<br>Supported Operating Systems: The Atomic Crypto Wallet supports multiple os’s including Windows, MacOS, and also Linux. You may even download the wallet on several Linux distributions, like Ubuntu, Debian, and Fedora. On mobile, the wallet is available for both Google Store and the App Store for Android and iOS devices. Potential Dealbreakers: The wallet does have no such potential deal breakers on the features side. Most of the crypto wallets have some threat of losing complete usage of your crypto assets, nevertheless the atomic does have no such issue. If you do not have usage of your device and lose your recovery phrase, you’ll lose all of your cryptocurrency. The exact same risk is valid for the Atomic wallet.\n<br>\n<br>WRAPPING UP:\n<br>The above-given detailed information is sufficient to cause you to acquainted with the Atomic wallet. It’s very easy to use this crypto wallet as it is available for several os’s, including Windows, MacOS, as well as several Linux distributions. You may even utilize the Atomic together with your Android and iOS devices. After successfully creating your wallet account, you are able to manage your cryptos with Atomic wallet.\n<br>\n<br>FREQUENTLY ASKED QUESTIONS\n<br>Is Atomic Free?\n<br>Yes, Atomic is liberated to download. You don’t need to pay for any fees to download the wallet on your device. You only have to pay transaction fees to switch crypto assets.\n<br>Is Atomic Wallet Available on Ubuntu?\n<br>Yes, the Atomic Wallet is available on Ubuntu along side other OS, like Debian, Fedora, Windows, and MacOS. You may even download the application on your Android and iOS devices.\n<br>How Many Cryptocurrencies Can I Store in Atomic Wallet?\n<br>You can store any quantity of cryptocurrency, large or small, on your Wallet.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "header2-1",
+          "_isUserblock": true,
+          "_cid": "tjzx5iw281",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
